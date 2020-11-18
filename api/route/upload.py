@@ -9,6 +9,7 @@ from ..common.file_format import IMAGE, VIDEO, AUDIO
 
 
 class Upload(Resource):
+    @jwt_required
     def post(self):
         file_type = request.form['type']
 

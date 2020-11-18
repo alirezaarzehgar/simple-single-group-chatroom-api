@@ -27,10 +27,10 @@ class User(Resource):
             db.session.delete(current_user)
             db.session.commit()
 
-            return jsonify(message="you are deleted successfully")
+            return jsonify(message="deleted successfully")
 
         else:
-            return make_response(jsonify(message="user dose not exists."), 402)
+            return make_response(jsonify(message="user dose not exists"), 402)
 
     @jwt_required
     def put(self):

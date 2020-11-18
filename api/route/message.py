@@ -55,7 +55,7 @@ class Message(Resource):
             return make_response(jsonify(message="your file or format not found"), 404)
 
         elif len(args['file_type']) > 1:
-            return make_response(jsonify(message="invalid type"), 404)
+            return make_response(jsonify(message="invalid type or name"), 404)
 
         else:
             file_name = sql.null()

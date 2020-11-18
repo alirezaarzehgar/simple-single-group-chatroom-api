@@ -30,4 +30,4 @@ class Download(Resource):
         elif file_name in os.listdir(PATH_FILE):
             return send_from_directory(PATH_FILE, file_name)
 
-        return jsonify(message="your file not found")
+        return make_response(jsonify(message="your file not found"), 404)
