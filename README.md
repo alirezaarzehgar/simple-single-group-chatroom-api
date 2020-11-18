@@ -128,6 +128,7 @@ Content: `{"msg": "Token has expired"}`
 PUT
 
 - Data Params
+
 filling all parameters is unnecessary.
 you can modify every parameter that you want
 
