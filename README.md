@@ -5,6 +5,7 @@ you can run it on your server and use from it.
 # installing
 
 $ `pip install -r requirement.txt`
+
 $ `python app.py`
 
 # API documention
