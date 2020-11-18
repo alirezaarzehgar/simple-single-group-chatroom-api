@@ -3,17 +3,18 @@ from sqlalchemy import sql
 from datetime import datetime
 import os
 
-from ..common import Resource, jwt_required
-from ..common import jsonify, make_response
-from ..common import reqparse, request
-from ..common import get_jwt_identity
-from ..common import db
-from ..common.path import PATH_AUDIO, PATH_FILE, PATH_IMAGE, PATH_VIDEO
+from ..common import (Resource, jwt_required,
+                      jsonify, make_response,
+                      reqparse, request, get_jwt_identity,
+                      db)
+
+from ..common.path import (PATH_AUDIO, PATH_FILE,
+                           PATH_IMAGE, PATH_VIDEO)
 
 from ..models.message import MessageModel
 from ..models.user import UserModel
-from ..schema.message import MessageSchema
-from ..schema.message import messages_schema
+from ..schema.message import (MessageSchema,
+                              messages_schema)
 
 
 parser = reqparse.RequestParser()

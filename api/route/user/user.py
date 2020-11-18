@@ -1,6 +1,7 @@
-from .. .common import jwt_required, Resource
-from .. .common import jsonify, make_response
-from .. .common import get_jwt_identity, reqparse
+from .. .common import (jwt_required, Resource,
+                        jsonify, make_response,
+                        get_jwt_identity, reqparse)
+
 from .. .models.user import UserModel, db
 from .. .schema.user import users_schema
 

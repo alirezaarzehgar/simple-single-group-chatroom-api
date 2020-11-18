@@ -1,10 +1,14 @@
 import os
 from werkzeug.utils import secure_filename
 
-from ..common import jwt_required, request
-from ..common import Resource, jsonify
-from ..common import make_response
-from ..common.path import PATH_AUDIO, PATH_FILE, PATH_IMAGE, PATH_MESSAGE, PATH_PROFILE, PATH_VIDEO
+from ..common import (jwt_required, request,
+                      Resource, jsonify,
+                      make_response)
+
+from ..common.path import (PATH_AUDIO, PATH_FILE,
+                           PATH_IMAGE, PATH_MESSAGE,
+                           PATH_PROFILE, PATH_VIDEO)
+
 from ..common.file_format import IMAGE, VIDEO, AUDIO
 
 

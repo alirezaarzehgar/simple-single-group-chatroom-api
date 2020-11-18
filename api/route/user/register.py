@@ -1,4 +1,7 @@
-from .. .common import db, reqparse, Resource, jsonify, make_response
+from .. .common import (db, reqparse,
+                        Resource, jsonify,
+                        make_response)
+
 from .. .models.user import UserModel
 
 

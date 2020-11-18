@@ -1,6 +1,7 @@
-from .. .common import jsonify, create_access_token
-from .. .common import Resource, make_response
-from .. .common import reqparse
+from .. .common import (jsonify, create_access_token,
+                        Resource, make_response,
+                        reqparse)
+
 from .. .models.user import UserModel
 
 

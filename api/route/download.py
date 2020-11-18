@@ -1,7 +1,10 @@
 from ..common import jsonify, make_response
 from ..common import jwt_required
 from ..common import Resource, request
-from ..common.path import PATH_PROFILE, PATH_AUDIO, PATH_FILE, PATH_IMAGE, PATH_MESSAGE, PATH_VIDEO
+from ..common.path import (PATH_PROFILE, PATH_AUDIO,
+                           PATH_FILE, PATH_IMAGE,
+                           PATH_MESSAGE, PATH_VIDEO)
+
 from ..common.file_format import AUDIO, IMAGE, VIDEO
 
 from flask import send_from_directory
